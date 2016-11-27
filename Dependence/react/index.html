@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>React Demo1</title>
+
+	<!-- React 核心库 -->
+	<script type="text/javascript" src="libs/react.js"></script> 
+
+	<!-- React DOM适配库 -->
+	<script type="text/javascript" src="libs/react-dom.js"></script>
+
+	<!-- Babel 是将JSX语法转换为Javascript语法的库 -->
+	<script type="text/javascript" src="libs/babel.min.js"></script>
+	
+</head>
+<body>
+	<div id="container"></div>
+	<script type="text/babel">
+		/* 使用了JSX语法的React */
+		/* 使用ReactDOM.render(,) 
+			https://facebook.github.io/react/docs/rendering-elements.html
+		*/
+		ReactDOM.render(
+			<span>Hello React!</span>,
+			document.getElementById('container')
+		);
+	</script>
+</body>
+</html>
